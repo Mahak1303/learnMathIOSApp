@@ -1,0 +1,118 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "math tables",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "go back",
+            "nevermind",
+            "cancel"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help please",
+            "please help",
+            "I need help",
+            "help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "leave ",
+            "stop",
+            "exit"
+          ]
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "TableNumber",
+          "slots": [
+            {
+              "name": "table_number",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "sign",
+              "type": "signs"
+            }
+          ],
+          "samples": [
+            "{sign} table of {table_number}",
+            "{sign}",
+            "{table_number}",
+            "{sign} of {table_number}",
+            "Can we do the {sign} table of {table_number}",
+            "I want to do {sign} of {table_number}",
+            "Can we do {sign}",
+            "I want to do {sign}",
+            "Can we practice the table of {table_number}",
+            "I want to practice the {sign} table of {table_number}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "subtraction",
+                "synonyms": [
+                  "subtract",
+                  "minus"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "addition",
+                "synonyms": [
+                  "add"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "division",
+                "synonyms": [
+                  "divide"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "multipication",
+                "synonyms": [
+                  "times",
+                  "multiply"
+                ]
+              }
+            }
+          ],
+          "name": "signs"
+        }
+      ]
+    }
+  },
+  "version": "5"
+}
